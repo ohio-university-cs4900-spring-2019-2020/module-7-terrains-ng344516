@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsAllocator.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsAssert.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsFoundation.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsMathUtils.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsString.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsTempAllocator.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\PsUtilities.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsAtomic.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsCpu.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsFPU.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsMutex.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsPrintString.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsSList.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsSocket.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsSync.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsThread.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\src\windows\PsWindowsTime.cpp">
+      <Filter>src\src\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\Ps.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsAlignedMalloc.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsAlloca.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsAllocator.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsAoS.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsArray.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsAtomic.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsBasicTemplates.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsBitUtils.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsBroadcast.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsCpu.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsFoundation.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsFPU.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsHash.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsHashInternals.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsHashMap.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsHashSet.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsInlineAllocator.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsInlineAoS.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsInlineArray.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsIntrinsics.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsMathUtils.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsMutex.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsPool.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsSList.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsSocket.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsSort.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsSortInternals.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsString.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsSync.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsTempAllocator.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsThread.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsTime.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsUserAllocated.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsUtilities.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecMath.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecMathAoSScalar.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecMathAoSScalarInline.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecMathSSE.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecMathUtilities.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecQuat.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\PsVecTransform.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include\PxFoundation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include\foundation\PxAssert.h">
+      <Filter>include\foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include\foundation\PxFoundationConfig.h">
+      <Filter>include\foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include\foundation\PxMathUtils.h">
+      <Filter>include\foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsAoS.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsFPU.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsInclude.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsInlineAoS.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsIntrinsics.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include\windows\PsWindowsTrigConstants.h">
+      <Filter>src\include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\Px.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxAllocatorCallback.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxProfiler.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxSharedAssert.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxBitAndData.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxBounds3.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxErrorCallback.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxErrors.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxFlags.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxIntrinsics.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxIO.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxMat33.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxMat44.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxMath.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxMemory.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxPlane.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxPreprocessor.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxQuat.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxSimpleTypes.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxStrideIterator.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxTransform.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxUnionCast.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxVec2.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxVec3.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\PxVec4.h">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\pxshared\include\foundation\windows\PxWindowsIntrinsics.h">
+      <Filter>shared\include\windows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\compiler\resource_x64\PhysXFoundation.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{1CB90ACE-08FB-3F3A-A210-C0E3DD96F50B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\foundation">
+      <UniqueIdentifier>{2822DC19-FFAD-3A54-8373-907197E01088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{BF5D1CB9-28EF-30D5-ACB2-EEDBFD91358A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{B0DD2C37-15C9-3E7C-A976-03671F91E84F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\include">
+      <UniqueIdentifier>{02B05E20-A355-398C-914B-A5E1B78D2464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\include\windows">
+      <UniqueIdentifier>{D02C5BA0-492A-3B33-8186-B377615C183D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0417DFF0-4511-3275-BA1C-17DABBE07382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{6AC745E5-2EB6-35A3-9368-CBE873D931A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\windows">
+      <UniqueIdentifier>{D7A314B7-F6D3-3144-83E0-3A13D0319462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{14675891-7656-3954-B925-2B4847FA2281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\windows">
+      <UniqueIdentifier>{A7EFE31F-4276-34F1-BA38-38F616D89F57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1BACED6-C2EA-3B96-BD1D-16573A5B5231}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\public\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\ZERO_CHECK.vcxproj">
+      <Project>{1291E432-F901-3A03-905D-D60665A3DC20}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\FastXml.vcxproj">
+      <Project>{DF852123-A4D8-3031-8C4A-F159503274C9}</Project>
+      <Name>FastXml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\LowLevel.vcxproj">
+      <Project>{C6F03454-5E0E-3B91-8597-ABC35DFFD6DF}</Project>
+      <Name>LowLevel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\LowLevelAABB.vcxproj">
+      <Project>{BE4288E6-7AB2-3B27-A129-0BC80D943BB2}</Project>
+      <Name>LowLevelAABB</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\LowLevelDynamics.vcxproj">
+      <Project>{D61718DE-A86A-36C9-A4FD-79E61DB041ED}</Project>
+      <Name>LowLevelDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{18029CEC-378B-372A-8CC1-C3B796EDB919}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{02145696-E99A-331E-8B4B-B92628557B9C}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{027672BC-7EAB-3EE6-8F03-D51CD3401C14}</Project>
+      <Name>PhysXCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{900CE240-9509-3E6E-9C54-556211FE9E61}</Project>
+      <Name>PhysXCooking</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{94964467-22E9-3F13-A53E-4181800DED11}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{D4F3CD45-059E-3C04-9F04-F4B95D6FD850}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{57AFCE34-72E3-3A6D-9734-D3AEFF2FE2BD}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXTask.vcxproj">
+      <Project>{5E72EBF9-0AE7-3570-A962-2A9C4624EECB}</Project>
+      <Name>PhysXTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{786835A4-5888-3B4F-9C05-2D648067D340}</Project>
+      <Name>PhysXVehicle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleBase.vcxproj">
+      <Project>{364757CE-76AC-30EB-A889-51550228D7B8}</Project>
+      <Name>SampleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleFramework.vcxproj">
+      <Project>{EFDBCDA1-D16D-37EE-8715-770EC84C84BB}</Project>
+      <Name>SampleFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SamplePlatform.vcxproj">
+      <Project>{A6CE8C74-70DB-33E6-8417-42F532E70FA1}</Project>
+      <Name>SamplePlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleRenderer.vcxproj">
+      <Project>{8DD32378-18E2-354C-B6B5-5C1F8D664CA1}</Project>
+      <Name>SampleRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{38A9A135-998D-3A36-8513-5048D24175B7}</Project>
+      <Name>SampleToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\Samples.vcxproj">
+      <Project>{A576EDBB-A104-3310-8FB8-108662DE0D19}</Project>
+      <Name>Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\SceneQuery.vcxproj">
+      <Project>{A4629630-5779-3B68-A331-B3BFF4006BC7}</Project>
+      <Name>SceneQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\SimulationController.vcxproj">
+      <Project>{52753881-0B87-36F8-8735-9BCFBBE6EAF3}</Project>
+      <Name>SimulationController</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetArticulation.vcxproj">
+      <Project>{0D01DF11-F095-3A18-A683-9C0DDD507F4F}</Project>
+      <Name>SnippetArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetBVHStructure.vcxproj">
+      <Project>{33BC3938-2AAD-342E-BD62-2E4C9B85CAE0}</Project>
+      <Name>SnippetBVHStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetContactModification.vcxproj">
+      <Project>{1653BB73-7F59-3126-889F-28594B659119}</Project>
+      <Name>SnippetContactModification</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetContactReport.vcxproj">
+      <Project>{3316BAC0-572D-3EB2-AF03-E0D779CAAB76}</Project>
+      <Name>SnippetContactReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetContactReportCCD.vcxproj">
+      <Project>{78D53C64-EC52-321D-881A-25BF561C80C8}</Project>
+      <Name>SnippetContactReportCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetConvert.vcxproj">
+      <Project>{FF107937-5D2B-33D1-8707-D6F211A4EBB2}</Project>
+      <Name>SnippetConvert</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetConvexMeshCreate.vcxproj">
+      <Project>{B90DF761-E17E-3C73-ACA0-3B6C776051D5}</Project>
+      <Name>SnippetConvexMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetCustomJoint.vcxproj">
+      <Project>{CB13D410-2AB2-30B2-B899-6551765FB043}</Project>
+      <Name>SnippetCustomJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetCustomProfiler.vcxproj">
+      <Project>{CF113EE7-1474-3D5C-A2C7-605BA17C787E}</Project>
+      <Name>SnippetCustomProfiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetDeformableMesh.vcxproj">
+      <Project>{5FAC5A74-CCE5-3060-9362-18F9EF897C77}</Project>
+      <Name>SnippetDeformableMesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetDelayLoadHook.vcxproj">
+      <Project>{E37CEAB7-7264-3376-B2B1-D526EE09559F}</Project>
+      <Name>SnippetDelayLoadHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetHelloGRB.vcxproj">
+      <Project>{9DBAEAC9-064C-36C4-B322-54BC2A19B812}</Project>
+      <Name>SnippetHelloGRB</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetHelloWorld.vcxproj">
+      <Project>{2215C0AB-D0A8-3C0A-8D0C-B9E772E88688}</Project>
+      <Name>SnippetHelloWorld</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetImmediateArticulation.vcxproj">
+      <Project>{A79E08EF-85BA-32B6-80BD-14C6C720D4BF}</Project>
+      <Name>SnippetImmediateArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetImmediateMode.vcxproj">
+      <Project>{82831E37-8949-36AC-B908-CAEAF6FB8DBF}</Project>
+      <Name>SnippetImmediateMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetJoint.vcxproj">
+      <Project>{99F1A231-707E-3941-92F1-01156A013341}</Project>
+      <Name>SnippetJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetLoadCollection.vcxproj">
+      <Project>{1477E3A8-4D29-35CF-94D4-C4387871C8F5}</Project>
+      <Name>SnippetLoadCollection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetMBP.vcxproj">
+      <Project>{E2980E70-B355-37CC-9311-E84D79EFF141}</Project>
+      <Name>SnippetMBP</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetMultiThreading.vcxproj">
+      <Project>{C22BE9F9-F0A3-39C3-8531-16EA3C9F17B7}</Project>
+      <Name>SnippetMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetNestedScene.vcxproj">
+      <Project>{A69E52E2-B06C-383B-99BC-8452374418AE}</Project>
+      <Name>SnippetNestedScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetPrunerSerialization.vcxproj">
+      <Project>{823E0898-B984-3E20-90B1-4F0D558C1473}</Project>
+      <Name>SnippetPrunerSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetRaycastCCD.vcxproj">
+      <Project>{9F92E5DD-2D97-38A8-AD1F-A3D46BC0269D}</Project>
+      <Name>SnippetRaycastCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{278DCFCA-C00A-3B1B-B4CF-8E3D8C66A163}</Project>
+      <Name>SnippetRender</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetSerialization.vcxproj">
+      <Project>{B754BFEE-8317-37ED-85B8-3B970E007313}</Project>
+      <Name>SnippetSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetSplitFetchResults.vcxproj">
+      <Project>{C2FEA3B0-0522-37F3-B585-1DE5E90E6C2B}</Project>
+      <Name>SnippetSplitFetchResults</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetSplitSim.vcxproj">
+      <Project>{DA750BBA-1C5B-3E12-90B3-AB17F750EA0C}</Project>
+      <Name>SnippetSplitSim</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetStepper.vcxproj">
+      <Project>{AB0C6E78-AAA0-3E68-974F-5E961E7324AB}</Project>
+      <Name>SnippetStepper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetToleranceScale.vcxproj">
+      <Project>{6475DA6A-AED5-3636-9232-C9B2756D8C7A}</Project>
+      <Name>SnippetToleranceScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetTriangleMeshCreate.vcxproj">
+      <Project>{6D3E9079-865D-32A7-8825-4566221659FF}</Project>
+      <Name>SnippetTriangleMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{5236FB39-AF7A-3329-B450-514919605508}</Project>
+      <Name>SnippetUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicle4W.vcxproj">
+      <Project>{16250B7E-FB66-3C65-9836-7151C98DD669}</Project>
+      <Name>SnippetVehicle4W</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicleContactMod.vcxproj">
+      <Project>{A73D8C32-E126-350C-B6FE-CADD0D7B79F2}</Project>
+      <Name>SnippetVehicleContactMod</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicleMultiThreading.vcxproj">
+      <Project>{DD1A6F70-F6A5-3DBD-8C86-19E0A3E4FC97}</Project>
+      <Name>SnippetVehicleMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicleNoDrive.vcxproj">
+      <Project>{B9F1368B-6D48-3E0C-83D1-271EDF6E6BB4}</Project>
+      <Name>SnippetVehicleNoDrive</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicleScale.vcxproj">
+      <Project>{7D928057-AAF8-30E4-889B-313B95180EA1}</Project>
+      <Name>SnippetVehicleScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetVehicleTank.vcxproj">
+      <Project>{6A1951A5-979B-30B0-B702-46630CFD6E9E}</Project>
+      <Name>SnippetVehicleTank</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

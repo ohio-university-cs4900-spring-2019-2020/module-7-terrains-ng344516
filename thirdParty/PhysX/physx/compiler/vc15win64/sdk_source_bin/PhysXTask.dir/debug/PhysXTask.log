@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  TaskManager.cpp
+  PhysXTask.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXTask_static_64.lib

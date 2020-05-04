@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+  SnippetCamera.cpp
+  SnippetRender.cpp
+  SnippetRender.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SnippetRender_static_64.lib

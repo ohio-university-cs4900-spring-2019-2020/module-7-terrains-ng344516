@@ -1,0 +1,24 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  Adjacencies.cpp
+  Cooking.cpp
+  CookingUtils.cpp
+  EdgeList.cpp
+  MeshCleaner.cpp
+  Quantizer.cpp
+  BVHStructureBuilder.cpp
+  HeightFieldCooking.cpp
+  RTreeCooking.cpp
+  MeshBuilder.cpp
+  TriangleMeshBuilder.cpp
+  GrbTriangleMeshCooking.cpp
+  BigConvexDataBuilder.cpp
+  ConvexHullBuilder.cpp
+  ConvexHullLib.cpp
+  ConvexHullUtils.cpp
+  ConvexMeshBuilder.cpp
+  ConvexPolygonsBuilder.cpp
+  QuickHullConvexHullLib.cpp
+  VolumeIntegration.cpp
+  WindowsCookingDelayLoadHook.cpp
+     Creating library C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/PhysXCooking_64.lib and object C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/PhysXCooking_64.exp
+  PhysXCooking.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXCooking_64.dll

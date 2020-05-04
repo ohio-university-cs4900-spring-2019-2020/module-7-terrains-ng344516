@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  SnippetVehicleScale.cpp
+  SnippetVehicleScaleRender.cpp
+  SnippetVehicle4WCreate.cpp
+  SnippetVehicleCreate.cpp
+  SnippetVehicleFilterShader.cpp
+  SnippetVehicleNoDriveCreate.cpp
+  SnippetVehicleSceneQuery.cpp
+  SnippetVehicleTankCreate.cpp
+  SnippetVehicleTireFriction.cpp
+  SnippetVehicleScale.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SnippetVehicleScale_64.exe

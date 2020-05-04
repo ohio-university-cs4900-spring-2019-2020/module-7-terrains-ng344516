@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  SnippetContactReportCCD.cpp
+  SnippetContactReportCCDRender.cpp
+  SnippetContactReportCCD.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SnippetContactReportCCD_64.exe

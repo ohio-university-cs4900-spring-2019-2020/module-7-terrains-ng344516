@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  PsAllocator.cpp
+  PsAssert.cpp
+  PsFoundation.cpp
+  PsMathUtils.cpp
+  PsString.cpp
+  PsTempAllocator.cpp
+  PsUtilities.cpp
+  PsWindowsAtomic.cpp
+  PsWindowsCpu.cpp
+  PsWindowsFPU.cpp
+  PsWindowsMutex.cpp
+  PsWindowsPrintString.cpp
+  PsWindowsSList.cpp
+  PsWindowsSocket.cpp
+  PsWindowsSync.cpp
+  PsWindowsThread.cpp
+  PsWindowsTime.cpp
+     Creating library C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/PhysXFoundation_64.lib and object C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/PhysXFoundation_64.exp
+  PhysXFoundation.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXFoundation_64.dll

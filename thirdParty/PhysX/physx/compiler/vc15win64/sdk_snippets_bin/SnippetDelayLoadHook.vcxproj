@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E37CEAB7-7264-3376-B2B1-D526EE09559F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>SnippetDelayLoadHook</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SnippetDelayLoadHook.dir\debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SnippetDelayLoadHook_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SnippetDelayLoadHook.dir\checked\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SnippetDelayLoadHook_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='checked|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='checked|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='checked|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SnippetDelayLoadHook.dir\profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SnippetDelayLoadHook_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='profile|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">SnippetDelayLoadHook.dir\release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|x64'">SnippetDelayLoadHook_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXExtensions_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysX_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXVehicle_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXCharacterKinematic_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXCooking_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXCommon_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SnippetUtils_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SnippetRender_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\PhysXFoundation_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\lib\win64\glut\glut32.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/SnippetDelayLoadHook_64.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/debug/SnippetDelayLoadHook_64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="checked";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"checked\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXExtensions_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysX_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXVehicle_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXCharacterKinematic_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXCooking_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXCommon_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\SnippetUtils_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\SnippetRender_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\PhysXFoundation_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\lib\win64\glut\glut32.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/checked/SnippetDelayLoadHook_64.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/checked/SnippetDelayLoadHook_64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXExtensions_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysX_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXVehicle_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXCharacterKinematic_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXCooking_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXCommon_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\SnippetUtils_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\SnippetRender_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\PhysXFoundation_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\lib\win64\glut\glut32.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/profile/SnippetDelayLoadHook_64.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/profile/SnippetDelayLoadHook_64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_SUPPORT_PVD=0;CMAKE_INTDIR="release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;RENDER_SNIPPET;PX_SUPPORT_PVD=0;CMAKE_INTDIR=\"release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\physxextensions\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\contact;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\common;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\convex;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\distance;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\sweep;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\gjk;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\intersection;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\mesh;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\hf;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\pcm;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\geomutils\src\ccd;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\include\win32\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXExtensions_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysX_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXVehicle_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXCharacterKinematic_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXCooking_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXCommon_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\SnippetUtils_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\SnippetRender_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXPvdSDK_static_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\PhysXFoundation_64.lib;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\Graphics\lib\win64\glut\glut32.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/release/SnippetDelayLoadHook_64.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/bin/win.x86_64.vc141.md/release/SnippetDelayLoadHook_64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\snippetcommon\ClassicMain.cpp" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\snippetcommon\SnippetPrint.h" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\snippetcommon\SnippetPVD.h" />
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\snippetdelayloadhook\SnippetDelayLoadHook.cpp" />
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\snippets\snippetdelayloadhook\SnippetDelayLoadHookRender.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\ZERO_CHECK.vcxproj">
+      <Project>{1291E432-F901-3A03-905D-D60665A3DC20}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{18029CEC-378B-372A-8CC1-C3B796EDB919}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{02145696-E99A-331E-8B4B-B92628557B9C}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{027672BC-7EAB-3EE6-8F03-D51CD3401C14}</Project>
+      <Name>PhysXCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{900CE240-9509-3E6E-9C54-556211FE9E61}</Project>
+      <Name>PhysXCooking</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{94964467-22E9-3F13-A53E-4181800DED11}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{D4F3CD45-059E-3C04-9F04-F4B95D6FD850}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{57AFCE34-72E3-3A6D-9734-D3AEFF2FE2BD}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{786835A4-5888-3B4F-9C05-2D648067D340}</Project>
+      <Name>PhysXVehicle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{278DCFCA-C00A-3B1B-B4CF-8E3D8C66A163}</Project>
+      <Name>SnippetRender</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{5236FB39-AF7A-3329-B450-514919605508}</Project>
+      <Name>SnippetUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

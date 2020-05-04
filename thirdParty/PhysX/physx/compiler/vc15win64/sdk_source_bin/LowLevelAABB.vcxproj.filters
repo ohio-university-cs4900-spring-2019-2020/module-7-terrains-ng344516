@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpAABBManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseABP.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseShared.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpMBPTasks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpSAPTasks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\include\BpAABBManager.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\include\BpAABBManagerTasks.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\include\BpBroadPhase.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\include\BpBroadPhaseUpdate.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseABP.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBPCommon.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseShared.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpMBPTasks.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\lowlevelaabb\src\BpSAPTasks.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="includes">
+      <UniqueIdentifier>{09B8C106-C7F8-3F3A-8352-0EE20EEAD443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0417DFF0-4511-3275-BA1C-17DABBE07382}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

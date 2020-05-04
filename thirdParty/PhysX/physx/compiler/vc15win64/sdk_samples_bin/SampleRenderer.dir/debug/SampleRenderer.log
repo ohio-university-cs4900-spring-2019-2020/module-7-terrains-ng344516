@@ -1,0 +1,95 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+  NULLRenderer.cpp
+  NULLRendererDirectionalLight.cpp
+  NULLRendererIndexBuffer.cpp
+  NULLRendererInstanceBuffer.cpp
+  NULLRendererMaterial.cpp
+  NULLRendererMesh.cpp
+  NULLRendererSpotLight.cpp
+  NULLRendererTexture2D.cpp
+  NULLRendererVertexBuffer.cpp
+  D3D9Renderer.cpp
+  D3D9RendererDirectionalLight.cpp
+  D3D9RendererIndexBuffer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.cpp)
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererDirectionalLight.cpp)
+  D3D9RendererInstanceBuffer.cpp
+  D3D9RendererMaterial.cpp
+  D3D9RendererMesh.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererIndexBuffer.cpp)
+  D3D9RendererSpotLight.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererMaterial.cpp)
+  D3D9RendererTarget.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererInstanceBuffer.cpp)
+  D3D9RendererTexture2D.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererMesh.cpp)
+  D3D9RendererVertexBuffer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererSpotLight.cpp)
+  D3D9WPFRenderer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererTarget.cpp)
+  D3D11Renderer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererTexture2D.cpp)
+  D3D11RendererDirectionalLight.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9RendererVertexBuffer.cpp)
+  D3D11RendererIndexBuffer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9\D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d9\D3D9WPFRenderer.cpp)
+  D3D11RendererInstanceBuffer.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.h(38): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d11\D3D11Renderer.cpp)
+  D3D11RendererMaterial.cpp
+  D3D11RendererMesh.cpp
+  D3D11RendererSpotLight.cpp
+  D3D11RendererTarget.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.h(38): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererMaterial.cpp)
+  D3D11RendererTexture2D.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.h(38): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererMesh.cpp)
+  D3D11RendererTexture3D.cpp
+  D3D11RendererUtils.cpp
+  D3D11RendererVariableManager.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.h(38): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.cpp)
+  D3D11RendererVertexBuffer.cpp
+  OGLRenderer.cpp
+  OGLRendererDirectionalLight.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererUtils.h(38): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\d3d11\D3D11RendererVariableManager.cpp)
+  OGLRendererIndexBuffer.cpp
+  OGLRendererInstanceBuffer.cpp
+  OGLRendererMaterial.cpp
+  OGLRendererMesh.cpp
+  OGLRendererSpotLight.cpp
+  OGLRendererTexture2D.cpp
+  OGLRendererVertexBuffer.cpp
+  Renderer.cpp
+  RendererBoxShape.cpp
+  RendererCapsuleShape.cpp
+  RendererColor.cpp
+c:\users\nicholas\documents\4900\modules\terrain\thirdparty\physx\physx\samples\sampleframework\renderer\src\d3d9/D3D9Renderer.h(42): fatal error C1083: Cannot open include file: 'd3dx9.h': No such file or directory (compiling source file C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\src\Renderer.cpp)
+  RendererDesc.cpp
+  RendererDirectionalLight.cpp
+  RendererDirectionalLightDesc.cpp
+  RendererGridShape.cpp
+  RendererIndexBuffer.cpp
+  RendererIndexBufferDesc.cpp
+  RendererInstanceBuffer.cpp
+  RendererInstanceBufferDesc.cpp
+  RendererLight.cpp
+  RendererLightDesc.cpp
+  RendererMaterial.cpp
+  RendererMaterialDesc.cpp
+  RendererMaterialInstance.cpp
+  RendererMesh.cpp
+  RendererMeshContext.cpp
+  RendererMeshDesc.cpp
+  RendererMeshShape.cpp
+  RendererProjection.cpp
+  RendererShape.cpp
+  RendererSpotLight.cpp
+  RendererSpotLightDesc.cpp
+  RendererTarget.cpp
+  RendererTargetDesc.cpp
+  RendererTerrainShape.cpp
+  RendererTexture.cpp
+  RendererTexture2D.cpp
+  RendererTexture2DDesc.cpp
+  RendererTextureDesc.cpp
+  RendererVertexBuffer.cpp
+  RendererVertexBufferDesc.cpp
+  RendererWindow.cpp

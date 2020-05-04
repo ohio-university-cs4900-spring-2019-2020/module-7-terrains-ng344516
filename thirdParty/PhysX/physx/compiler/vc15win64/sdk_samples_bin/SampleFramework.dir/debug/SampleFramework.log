@@ -1,0 +1,18 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+  WindowsSampleAssetManager.cpp
+  nv_dds.cpp
+  ODBlock.cpp
+  SampleApplication.cpp
+  SampleAsset.cpp
+  SampleAssetManager.cpp
+  SampleCommandLine.cpp
+  SampleDirManager.cpp
+  SampleInputAsset.cpp
+  SampleLineDebugRender.cpp
+  SampleMaterialAsset.cpp
+  SamplePointDebugRender.cpp
+  SampleTextureAsset.cpp
+  SampleTree.cpp
+  SampleTriangleDebugRender.cpp
+  targa.cpp
+  SampleFramework.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SampleFramework_static_64.lib

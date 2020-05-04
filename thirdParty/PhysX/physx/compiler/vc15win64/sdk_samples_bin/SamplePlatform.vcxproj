@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6CE8C74-70DB-33E6-8417-42F532E70FA1}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>SamplePlatform</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SamplePlatform.dir\debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SamplePlatform.dir\checked\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='checked|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SamplePlatform.dir\profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='profile|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">SamplePlatform.dir\release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="checked";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\checked\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"checked\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\profile\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR="release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\release\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR=\"release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\renderer\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\framework\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\common\src;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\pxtoolkit\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\..\pxshared\include;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\src\windows\WindowsSamplePlatform.cpp" />
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\src\windows\WindowsSampleUserInput.cpp" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\windows\WindowsSampleUserInputIds.h" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\windows\WindowsSampleUserInput.h" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\windows\WindowsSamplePlatform.h" />
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\src\SamplePlatform.cpp" />
+    <ClCompile Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\src\SampleUserInput.cpp" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\SampleUserInputIds.h" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\SampleUserInput.h" />
+    <ClInclude Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\sampleframework\platform\include\SamplePlatform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\ZERO_CHECK.vcxproj">
+      <Project>{1291E432-F901-3A03-905D-D60665A3DC20}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{18029CEC-378B-372A-8CC1-C3B796EDB919}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{94964467-22E9-3F13-A53E-4181800DED11}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{D4F3CD45-059E-3C04-9F04-F4B95D6FD850}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{57AFCE34-72E3-3A6D-9734-D3AEFF2FE2BD}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{38A9A135-998D-3A36-8513-5048D24175B7}</Project>
+      <Name>SampleToolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

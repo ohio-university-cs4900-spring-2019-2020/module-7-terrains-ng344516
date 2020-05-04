@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1BACED6-C2EA-3B96-BD1D-16573A5B5231}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/public -BC:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64 --check-stamp-file C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/compiler/vc15win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config-version.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\externals\targa\targa-config.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\ZERO_CHECK.vcxproj">
+      <Project>{1291E432-F901-3A03-905D-D60665A3DC20}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleBase.vcxproj">
+      <Project>{364757CE-76AC-30EB-A889-51550228D7B8}</Project>
+      <Name>SampleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleFramework.vcxproj">
+      <Project>{EFDBCDA1-D16D-37EE-8715-770EC84C84BB}</Project>
+      <Name>SampleFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SamplePlatform.vcxproj">
+      <Project>{A6CE8C74-70DB-33E6-8417-42F532E70FA1}</Project>
+      <Name>SamplePlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleRenderer.vcxproj">
+      <Project>{8DD32378-18E2-354C-B6B5-5C1F8D664CA1}</Project>
+      <Name>SampleRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{38A9A135-998D-3A36-8513-5048D24175B7}</Project>
+      <Name>SampleToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\compiler\vc15win64\sdk_samples_bin\Samples.vcxproj">
+      <Project>{A576EDBB-A104-3310-8FB8-108662DE0D19}</Project>
+      <Name>Samples</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

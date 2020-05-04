@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/Users/Nicholas/Documents/4900/modules/Terrain/thirdParty/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  BpAABBManager.cpp
+  BpBroadPhase.cpp
+  BpBroadPhaseABP.cpp
+  BpBroadPhaseMBP.cpp
+  BpBroadPhaseSap.cpp
+  BpBroadPhaseSapAux.cpp
+  BpBroadPhaseShared.cpp
+  BpMBPTasks.cpp
+  BpSAPTasks.cpp
+  LowLevelAABB.vcxproj -> C:\Users\Nicholas\Documents\4900\modules\Terrain\thirdParty\PhysX\physx\bin\win.x86_64.vc141.md\debug\LowLevelAABB_static_64.lib
